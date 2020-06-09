@@ -9,10 +9,10 @@ root.wm_title('Periodic Table')
 entry1 = ttk.Entry(root, textvariable = "input_text", justify = CENTER,
                                      font = ('courier', 15, 'bold'))
 canvas = Canvas(root,width= 1422,height = 812)
-image = ImageTk.PhotoImage(Image.open("Screen Shot 2020-06-02 at 04.17.29.jpeg"))
-canvas.create_image(0,0,anchor= NW, image=image)
+image = ImageTk.PhotoImage(Image.open("background.jpeg"))
+canvas.create_image(0,0,anchor= NW, image = image)
 canvas.pack()
-mylabel2 = Label(root, text = "enter the atomic number").place(x =4450,y= 280)
+mylabel2 = Label(root, text = "enter the atomic number").place(x = 4450,y= 280)
 
 def myclick():
     mylabel = Label(root,text = "Please click for see all data!")
@@ -26,7 +26,7 @@ entry = e.get()
 
 config = {
 'user':'root',
-'password':'74536600',
+'password':'psswd',
 'host':'localhost',
 'database' : 'mydb',
 'port' : '3306'
